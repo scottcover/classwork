@@ -1,3 +1,22 @@
-h1 {
-    color: blue;
+body{
+    background-color: goldenrod;
 }
+header{
+    text-align:center;
+}
+h1{
+    font-size: 45px;
+}
+h3{
+    font-size: 35px;
+}
+img{
+    max-width: 25%;
+    max-height: 25%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+  }
