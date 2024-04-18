@@ -5,6 +5,10 @@
   h1 {
     text-align: center;
   }
+
+  .topRow {
+    background-color: blue;
+  }
   
   .time {
     background-color: green;
