@@ -8,21 +8,22 @@
 .main > div {
     display: flex;
     text-align: center;
+    column-gap: 5px;
+    padding: 10px;
 }
 
 .blue-container > div {
     background-color: blue;
     padding: 20px;
-    margin: 10px;
     width: 50px;
     min-height: 10px;
 }
 
 .red-container > div {
     flex-direction: column;
+    flex-grow: 1;
     background-color: red;
     padding: 20px;
-    margin: 10px;
     width: 50px;
     min-height: 10px;
 }
