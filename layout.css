@@ -3,11 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    display:flex;
-}
-
-.image{
+.bearHeader{
     padding:2px;
     height:50%;
     width:50%;
@@ -48,8 +44,23 @@ h1 {
 .nav a.active {
     background-color: lightsalmon;
     color: white;
-  }
+}
 
-  /*Body*/
+/*Body*/
 
-  
+.container{
+    display:flex;
+}
+
+.left{
+    display:flex;
+    flex-basis:30%;
+}
+
+.right{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex-basis:70%;
+    height: 500px;
+}
