@@ -14,6 +14,7 @@ body {
 .sitename{
     display:flex;
     flex-basis: 90%;
+    background-color: blue;
 }
 
 h1 {
@@ -28,12 +29,11 @@ h1 {
 }
   
 .nav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
+    text-decoration:none;
 }
   
 .nav a:hover {
