@@ -1,8 +1,14 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
     display:flex;
 }
 
 .image{
+    padding:2px;
     height:50%;
     width:50%;
     display:flex;
@@ -19,6 +25,7 @@ h1 {
     font-size:40px;
 }
 
+/* Navigation */
 .nav {
     overflow: hidden;
     background-color: #333;
@@ -30,7 +37,7 @@ h1 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 12px;
 }
   
 .nav a:hover {
@@ -39,6 +46,10 @@ h1 {
 }
   
 .nav a.active {
-    background-color: #04AA6D;
+    background-color: lightsalmon;
     color: white;
   }
+
+  /*Body*/
+
+  
