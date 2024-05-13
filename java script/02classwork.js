@@ -1,4 +1,5 @@
 const playerName = prompt("Enter character name");
+let shillings = 5;
 
 if (playerName === "" ){
     alert(`Please enter a name`);
@@ -15,19 +16,19 @@ while (true) {
         console.log("Chosen class:", playerClass);
         break;
     } else {
-        alert("Invalid class! Please enter 'Mage' or 'Warrior'.");
+        alert("Invalid class! Please choose 'Mage' or 'Warrior'.");
     }
 }
 
 while (true) {
-    quest1 = prompt(`You need a weapon for your journey. Please choose between a Staff or a Sword ${playerName} the ${playerClass}!`);
-    quest1 = quest1.toLowerCase();
+    weapon = prompt(`You need a weapon for your journey. Please choose between a Staff or a Sword ${playerName} the ${playerClass}!`);
+    weapon = weapon.toLowerCase();
     
-    if (quest1 === "staff") {
-        console.log(`Chosen weapon:`, quest1);
+    if (weapon === "staff") {
+        console.log(`Chosen weapon:`, weapon);
         break;
-    } else if (quest1 === "sword") {
-        console.log(`Chosen weapon:`, quest1);
+    } else if (weapon === "sword") {
+        console.log(`Chosen weapon:`, weapon);
         break;
     } else {
         alert(`Invalid choice! Please type 'Staff' or 'Sword'.`);
@@ -49,7 +50,8 @@ while (true) {
         if (fightOrRun === "fight") {
             alert(`You decide to fight the bear. It's a tough battle, but you manage to defeat it.`);
         } else if (fightOrRun === "run") {
-            alert(`You decide to run away from the bear. You escape, but you lose some valuable items in the process.`);
+            shillings -= 4
+            alert(`You decide to run away from the bear. You escape, but you lost 4 shillings in the process. You currently have ${shillings} left.`);
         } else {
             alert(`Invalid choice! Please type 'Fight' or 'Run'.`);
         }
@@ -76,9 +78,7 @@ while (true) {
         alert(`Invalid choice! Please choose 'Left' or 'Right'.`);
     }
 }
-
-let shillings = 5; 
-
+ 
 while (true) {
     quest3 = prompt(`The paths through the forest and around the forest merge. You come upon a village and enter the tavern. The bartender offers you an ale for 1 shilling or a whiskey for 2 shillings. You have ${shillings} in your coin pouch.`);
     quest3 = quest3.toLowerCase();
@@ -103,7 +103,7 @@ while (true) {
 }
 
   let story = `Welcome, ${playerName} the ${playerClass}!\n`;
-  story += `You armed yourself with a ${quest1} and set out on your journey.\n`;
+  story += `You armed yourself with a ${weapon} and set out on your journey.\n`;
   story += `You faced a fork in the road and chose the path to the ${quest2}.\n`;
   if (quest2 === "left") {
       story += `On the left path, you encountered a bear. You decided to ${fightOrRun}.\n`;

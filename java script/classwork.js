@@ -143,6 +143,48 @@ if (userName === ourName) {
 
 
 
+function absoluteValue(number){
+    if(number >= 0){
+        return number;
+    } else {
+        return number * -1;
+    }
+}
+
+// 2nd way
+// return number >= 0 ? number : number * -1;
+
+//3rd Way
+//if (number >=0) return number;
+//if (number <0) return number * -1;
+
+//prototypical
+//return Math.abs(number);
+
+
+const rightTriangle = (a, b, c) => {
+    if(a * a === b * b + c * c) {
+        console.log("it is a right triangle")
+    } else {
+        console.log("it is not a right triangle")
+    }
+}
+
+rightTriangle (30,20,10)
+
+
+
+//DOM = document object model
+
+//let div1 = document.getElementById("div1");
+//    div1.style.height = "100px";
+
+
+
+
+
+
+
 
 
 
