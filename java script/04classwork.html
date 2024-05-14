@@ -26,13 +26,13 @@
     <div class="class1" id="div10">Div 10</div>
     <script>
       //! Make the following changes in order:
-      //!    1. Every div with `.class1` should have an orange border
-      //!    2. Every div with `.class3` should have red text
-      //!    3. Every div with `.class4` should have blue text
-      //!    4. Remove `.class5` from all divs with `.class5` and replace with .class6
-      //!    5. Add `.class7` to ALL divs
-      //!    6. Remove the element with `#div8`
-      //!    7. All divs with `.class2` should have a black background with white text
+      //!    1. Every div with `.class1` should have an orange border (done)
+      //!    2. Every div with `.class3` should have red text (done)
+      //!    3. Every div with `.class4` should have blue text (done)
+      //!    4. Remove `.class5` from all divs with `.class5` and replace with .class6 (done)
+      //!    5. Add `.class7` to ALL divs (done)
+      //!    6. Remove the element with `#div8` (done)
+      //!    7. All divs with `.class2` should have a black background with white text (done)
       //!    8. Take the div with `#div10` and reduce the height and width to 42% of what it was
       //!       (without hard-coding the number) and then change the id to `div10New`
 
@@ -40,49 +40,46 @@
 
       let divs1 = document.querySelectorAll(".class1");
       divs1.forEach((item) => {
-        console.log(item);
         item.style.border = "2px solid orange";
       });
 
+      let divs3 = document.querySelectorAll(".class3")
+      divs3.forEach((item) => {
+        item.style.color = "red";
+      });
 
-
-
+      let divs4 = document.querySelectorAll(".class4")
+      divs4.forEach((item) => {
+        item.style.color = "blue"
+      });
 
       let divs5 = document.querySelectorAll(".class5");
-      devs5.forEach((item) => {
+      divs5.forEach((item) => {
         item.classList.remove("class5");
         item.classList.add("class6");
         //item.classList.replace("class5", "class6");
       });
 
+      let divs = document.getElementsByTagName("div");
+      Array.from(divs).forEach((item) => {
+        item.classList.add("class7");
+      });
+      
+      let divs8 = document.getElementById("div8");
+      divs8.remove();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      let divs2 = document.querySelectorAll(".class2");
+      divs2.forEach((item) => {
+        item.style.backgroundColor = "black";
+        item.style.color = "white";
+      });
+    
+      let div10 = document.getElementById("div10");
+      let currentWidth = div10.offsetWidth;
+      let currentHeight = div10.offsetHeight;
+      div10.style.width = `${currentWidth * 0.42}px`;
+      div10.style.height = `${currentHeight * 0.42}px`;
+      div10.id = "div10New";
 
     </script>
   </body>

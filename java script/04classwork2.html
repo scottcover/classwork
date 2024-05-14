@@ -15,15 +15,47 @@
       //!   - Div 3 - Orange Border, white with red text that says: "Div 3" 150px by 100px
       //!   - Div 4 - Fixed to the top, any color, and taking up the full width of the page.
 
-      //create
+     
       let div1 = document.createElement("div");
-      //change style
+     
       div1.style.backgroundColor = "red";
       div1.style.border = "2px solid black";
       div1.style.width = "200px"
       div1.style.height = "200px"
-      //add
+    
       document.body.appendChild(div1);
+    
+      let div2 = document.createElement("div");
+
+      div2.style.backgroundColor = "blue"
+      div2.style.height = "100px"
+      div2.style.width = "100px"
+      div2.style.borderRadius = "50%"
+
+      document.body.appendChild(div2);
+
+      let div3 = document.createElement("div");
+
+      div3.style.border = "2px solid orange"
+      div3.style.backgroundColor = "white"
+      div3.style.color = "red"
+      div3.style.height = "150px"
+      div3.style.width = "100px"
+      div3.textContent = "Div 3"
+
+      document.body.appendChild(div3)
+
+      let div4 = document.createElement("div");
+
+      div4.style.position = "fixed"
+      div4.style.top = "0"
+      div4.style.left = "0"
+      div4.style.width = "100%"
+      div4.style.height = "20px"
+      div4.style.backgroundColor = "purple"
+      div4.style.color = "white"
+
+      document.body.appendChild(div4);
 
     </script>
   </body>
