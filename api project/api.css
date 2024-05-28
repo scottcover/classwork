@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: teal;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+}
+
+#searchForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#searchForm label {
+    font-weight: bold;
+}
+
+#searchForm input,
+#searchForm select,
+#searchForm button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#resultsSection {
+    margin-top: 32px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.resultItem {
+    border: 1px solid lightslategrey;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+}
+
+#paginationControls {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.paginationButton {
+    margin: 0 8px;
+    padding: 0 8px 16px;
+    background-color: slategray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.paginationButton:disabled {
+    background-color: slateblue;
+}

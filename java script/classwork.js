@@ -182,8 +182,8 @@ rightTriangle (30,20,10)
 
 
 const rockButton = document.getElementById("rock");
-const paperButton = document.getElementById("rock");
-const scissorsButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
 
 rockButton.addEventListener("click", () => userSelect("rock"));
 paperButton.addEventListener("click", () => userSelect("paper"));
